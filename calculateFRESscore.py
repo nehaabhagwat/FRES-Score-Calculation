@@ -338,7 +338,6 @@ class ImageDownload:
             sentence = association[ele+1][0]['SENTENCE']
             print sentence
             os.chdir("jythonMusic")
-            # With help from Chinmay Mishra
             process_jython = subprocess.Popen([".\jython.bat", "-i", "text_to_music.py", sentence],shell=True)
             time.sleep(5)
             process_jython.terminate()
